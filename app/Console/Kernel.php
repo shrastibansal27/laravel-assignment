@@ -4,7 +4,6 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use NicolasMahe\SlackOutput\Facade\SlackOutput;
 
 class Kernel extends ConsoleKernel
 {
@@ -25,9 +24,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-       SlackOutput::scheduledCommand(
-    $schedule->command('db:backup-auto')->daily()
-  );
+       // SlackOutput::scheduledCommand(
+    // $schedule->command('db:backup-auto')->daily()
+  // );
     }
 
     /**

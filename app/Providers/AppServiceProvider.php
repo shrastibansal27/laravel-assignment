@@ -10,7 +10,7 @@ use Illuminate\Queue\Events\JobFailed;
 use App\Models\LogMessage;
 use App\Notifications\Slack;
 use Illuminate\Support\Facades\Notification;
-use NicolasMahe\SlackOutput\Facade\SlackOutput;
+
 
 class AppServiceProvider extends ServiceProvider
 {
